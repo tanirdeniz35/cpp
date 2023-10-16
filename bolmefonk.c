@@ -14,3 +14,4 @@ int main (void)
     float s=bol (7.0,2.0);
     printf("%f",s);
 }
+//fonksiyon github
