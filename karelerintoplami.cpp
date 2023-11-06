@@ -17,7 +17,6 @@ int main() {
             toplam += rakam * rakam;
             snc /= 10;
         }
-
         if (toplam == sayi) {
             printf("%d sayisi rakamlarinin karelerinin toplamina esittir.\n", sayi);
         } else {
