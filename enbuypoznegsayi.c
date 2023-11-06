@@ -9,8 +9,10 @@ int main() {
     for (int i = 0; i < 10; i++) {
         printf("Lütfen %d. (a, b, c) değerlerini girin: ", i + 1);
         scanf("%d %d %d", &a, &b, &c);
-
         y = a + b + c;
+
+        if (i==0)
+            enbuyuk=y;
 
         if (y > 0) {
             pozsay++;
