@@ -61,7 +61,7 @@ int main (void)
             goto B;
         goto A;
 
-        B: for (int i = 1; i < 101; i++) {
+        B: for (int i = 1; i < sayac+1; i++) {
             printf ("%d-\t",i);
         for (int j = 1; j <= 5; j++) {
             printf ("%d \t",matris[i][j]);

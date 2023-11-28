@@ -45,9 +45,9 @@ int main (void)
         
         if (sayac>4)
         {
-            for (int k = 0; k <= 3; k++) { 
+            for (int k = 0; k <= 0; k++) { 
                for (int j = 1; j <= 5; j++) {
-                      if (matris[sayac-k][j]!=matris[4-k][j])
+                      if (matris[sayac-k][j]!=matris[sayac-1][j])
                           esitmi=0;
                   }
                }
@@ -64,7 +64,7 @@ int main (void)
             goto B;
         goto A;
 
-        B: for (int i = 1; i < 101; i++) {
+        B: for (int i = 1; i < sayac+1; i++) {
             printf ("%d-\t",i);
         for (int j = 1; j <= 5; j++) {
             printf ("%d \t",matris[i][j]);
