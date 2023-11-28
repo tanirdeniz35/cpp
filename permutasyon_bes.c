@@ -2,7 +2,7 @@
 
 int main (void)
 {
-    int matris[1000][7];
+    int matris[10000][7];
     matris[1][1]=2;
     matris[1][2]=1;
     matris[1][3]=3;
@@ -54,11 +54,11 @@ int main (void)
         sayac++;
         int esitmi = 1;
         
-        if (sayac>5)
+        if (sayac>2022)
         {
-            for (int k = 0; k <= 4; k++) { 
+            for (int k = 0; k <= 0; k++) { 
                for (int j = 1; j <= 6; j++) {
-                      if (matris[sayac-k][j]!=matris[5-k][j])
+                      if (matris[sayac-k][j]!=matris[sayac-1][j])
                           esitmi=0;
                   }
                }
@@ -75,7 +75,7 @@ int main (void)
             goto B;
         goto A;
 
-        B: for (int i = 1; i < 101; i++) {
+        B: for (int i = 1; i < sayac+2; i++) {
             printf ("%d-\t",i);
         for (int j = 1; j <= 6; j++) {
             printf ("%d \t",matris[i][j]);

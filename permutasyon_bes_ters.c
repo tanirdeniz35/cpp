@@ -2,7 +2,7 @@
 
 int main (void)
 {
-    int matris[100000][7];
+    short int matris[500000][7];
     matris[1][1]=2;
     matris[1][2]=1;
     matris[1][3]=3;
